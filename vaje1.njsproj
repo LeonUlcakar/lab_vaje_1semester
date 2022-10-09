@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>884b2ad5-3004-45d3-a951-8dc26e3c1e4e</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>1a.js</StartupFile>
+    <StartupFile>1-3.js</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -28,7 +28,10 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="1a.js" />
+    <Content Include="1-3.js" />
+    <Content Include="4.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
   </ItemGroup>

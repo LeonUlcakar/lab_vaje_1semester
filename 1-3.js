@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 function get_num_dividers(x) {
     var num_of_dividers = 0;
     for (let i = 1; i <= x; i++) {
@@ -65,6 +65,5 @@ function get_modes(array) {
 
 //divider(n);
 dividers2([12,15, 16, 18, 20,112]);
-
-
+*/
 
