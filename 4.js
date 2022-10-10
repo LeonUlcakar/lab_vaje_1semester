@@ -13,9 +13,43 @@ let IMPORTANT_MESSAGE = [
     'l', 'k', 'z', 'b', '?', 'j',
     'e', 'h', 0];
 
+let inspace = {};
+let outspace = {};
 
+for (let i = 0; i < CHARTABLE.length - 1; i++) {
+    inspace[CHARTABLE[i]] = CHARTABLE[i];
+    outspace[CHARTABLE[i]] = CHARTABLE[i]; 
+}
 
+inspace["_"] = " ";
+outspace[" "] = "_";
 
+function encrypt(word, x) {
+    let cypher = {};
+    let encrypted_word = [];
+    for (let i = 0; i < CHARTABLE.lenght; i++) {
+        cipher[CHARTABLE[i]] = CHARTABLE[(x + i) % 26];
+    }
+    for (let i = 0; i < word.lenght; i++) {
+        encrypted_word.push(inspace[cypher[outspace[word[i]]]]);
+    }
+    return encrypted_word.join("");
+}
+
+function decode(word, x) {
+    let cypher = {};
+    let encrypted_word = [];
+    for (let i = 0; i < CHARTABLE.length; i++) {
+        cypher[CHARTABLE[(x + i) % 26]] = CHARTABLE[i];
+    }
+    for (let i = 0; i < word.lenght; i++) {
+        encrypted_word.push(inspace[cypher[outspace[word[i]]]]);
+    }
+    return encrypted_word.join("");
+}
+
+console.log(decode(IMPORTANT_MESSAGE));
+/*
 
 //console.log(get_char_index('p'));
 
@@ -50,3 +84,4 @@ function decrypt(array) {
 //console.log(get_char_index_decrypted(get_char_index_encrypted('p')));
 console.log(get_char_index_decrypted(get_char_index_encrypted(IMPORTANT_MESSAGE[2])));
 'use strict'
+*/
